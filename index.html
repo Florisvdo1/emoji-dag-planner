@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Day Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cloud Background -->
+        <div class="clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Emoji Dagplanner</h1>
+                <time id="current-time"></time>
+            </header>
+
+            <!-- Time Grids -->
+            <div class="time-grids">
+                <div class="grid-section">
+                    <h2>Morning</h2>
+                    <div class="emoji-grid" id="morning-grid"></div>
+                </div>
+                <div class="grid-section">
+                    <h2>Midday</h2>
+                    <div class="emoji-grid" id="midday-grid"></div>
+                </div>
+                <div class="grid-section">
+                    <h2>Evening</h2>
+                    <div class="emoji-grid" id="evening-grid"></div>
+                </div>
+            </div>
+
+            <!-- Homework Button -->
+            <button id="homework-button" class="homework-button">
+                📚 Homework Done
+            </button>
+
+            <!-- Emoji Picker -->
+            <div class="emoji-picker">
+                <div class="emoji-categories" id="emoji-categories"></div>
+                <div class="emoji-grid-picker" id="emoji-grid-picker"></div>
+            </div>
+
+            <!-- Day Rating -->
+            <div class="day-rating">
+                <h3>How was your day?</h3>
+                <div class="rating-buttons">
+                    <button data-rating="1">😱</button>
+                    <button data-rating="2">😕</button>
+                    <button data-rating="3">😐</button>
+                    <button data-rating="4">🙂</button>
+                    <button data-rating="5">😄</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
